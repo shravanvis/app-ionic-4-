@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  constructor(private auth: AuthService){ }
+
+  logInWithGoogle(){
+    this.auth.login();
+  }
+  logOutWithGoogle(){
+    this.auth.logout()
+  }
 }

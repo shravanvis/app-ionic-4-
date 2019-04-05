@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Social</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+    <ion-slides pager="true" [options]="slideOpts" class="container">
+        <ion-slide>
+          <!-- <h1>Slide 1</h1> -->
+          <ion-img src="../../assets/images/01.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <!-- <h1>Slide 2</h1> -->
+          <ion-img src="../../assets/images/02.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <!-- <h1>Slide 3</h1> -->
+          <ion-img src="../../assets/images/03.jpg"></ion-img>
+          <ion-button color="light" class="btn" [routerLink]="['/home']" routerLinkActive="router-link-active" >
+            <ion-icon slot="end" name="arrow-forward"></ion-icon>
+            Continue
+          </ion-button>
+        </ion-slide>
+      </ion-slides>
+
