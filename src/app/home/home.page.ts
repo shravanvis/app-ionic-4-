@@ -1,3 +1,5 @@
+import { auth } from 'firebase/app';
+import { AngularFireAuth } from '@angular/fire/auth';
 import { Component } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
